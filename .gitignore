@@ -1,0 +1,12 @@
+/.idea
+/.ipynb_checkpoints
+/.vscode
+/launches
+/archive
+/__pycache__
+/instantclient_19_11
+/venv
+/wallpapers
+/cert
+DB.sqbpro
+DB.sqlite3

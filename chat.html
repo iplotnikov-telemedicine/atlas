@@ -1,0 +1,38 @@
+<style type="text/css">
+    body {
+        display: flex;;
+        flex-direction: column;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        /* scrollbar-color: red; */
+        margin-left: 0px;
+        /* margin-right: 0px; */
+    }
+
+</style>
+
+<head></head>
+
+<body>
+  
+    {% if chat %}   
+        {{ chat }}
+    {% else %}
+        {{ nothing_here }}
+    {% endif %}
+    
+    <script>
+        function scrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        history.scrollRestoration = "manual";
+        window.onload = scrollToBottom;
+    </script>
+
+</body>
+
